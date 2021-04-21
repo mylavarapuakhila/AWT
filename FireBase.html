@@ -41,6 +41,7 @@
                 var newname=document.getElementById("name").value;
   
                 dbrf.child(roll).update({StudentName:newname})
+                document.getElementById("print").innerHTML = ""
                 console.log("Data updated");
             }   
             function studentsdata()
